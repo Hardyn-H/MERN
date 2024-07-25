@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Image and Text Example</title>
+  <style>
+    .image {
+      width: 100%; 
+    }
+    .text {
+      font-size: 16px; 
+    }
+    @media screen and (max-width: 600px) {
+      .image {
+        width: 80%; 
+      }
+      .text {
+        font-size: 14px; 
+      }
+    }  
+    @media screen and (min-width: 1200px) {
+      .image {
+        width: 50%; 
+      }
+
+      .text {
+        font-size: 18px; 
+      }
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <img class="image" src="https://t4.ftcdn.net/jpg/01/24/37/43/360_F_124374337_KdynYsYd77me6RN7spYT3wHi7DpfEBrP.jpg" alt="About cockatoo">
+    <p class="text">A cockatoo is any of the 21 species of parrots belonging to the family Cacatuidae, the only family in the superfamily Cacatuoidea.<br> Along with the Psittacoidea (true parrots) and the Strigopoidea (large New Zealand parrots), they make up the order Psittaciformes. The family has a mainly Australasian distribution, ranging from the Philippines and the eastern Indonesian islands of Wallacea to New Guinea, the Solomon Islands and Australia.</p>
+  </div>
+</body>
+</html>
